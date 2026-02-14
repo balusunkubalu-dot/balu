@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Love AMMADI❤️</title>
+
+<style>
+body{
+margin:0;
+background:black;
+color:white;
+font-family:cursive;
+text-align:center;
+overflow:hidden;
+}
+
+.container{
+padding:40px;
+}
+
+img{
+width:250px;
+border-radius:20px;
+margin:20px;
+box-shadow:0 0 20px pink;
+}
+
+h1{
+color:#ff4d6d;
+font-size:40px;
+animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{ text-shadow:0 0 10px pink;}
+to{ text-shadow:0 0 25px red;}
+}
+
+.heart{
+position:absolute;
+color:#ff4d6d;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+to{ transform:translateY(100vh);}
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+<h1>I LOVE YOU AMMADI ❤️</h1>
+<img src="ammadi.jpg" alt="AMMADI">
+<p>
+YOU ARE MY WORLD FOREVER BANGARAM 💖 <br><br>
+I DON’T KNOW THE EXACT MOMENT WHEN MY FEELINGS FOR YOU BEGAN,
+BECAUSE LOVING YOU FEELS AS NATURAL AS BREATHING. <br><br>
+MAYBE IT WAS THE FIRST TIME YOU SMILED AT ME,
+OR THE FIRST TIME I NOTICED HOW YOUR PRESENCE
+QUIETLY BRIGHTENS EVERY PLACE YOU WALK INTO. <br><br>
+SINCE THEN, SOMETHING INSIDE ME HAS CHANGED.  
+MY DAYS FEEL LIGHTER WHEN I TALK TO YOU,
+AND EVEN THE SIMPLEST MOMENTS BECOME SPECIAL
+WHEN YOU ARE PART OF THEM. <br><br>
+I ADMIRE YOU.  
+I RESPECT YOU.  
+I CHERISH YOU. ❤️ <br><br>
+
+— Forever Yours,  
+<b>Balu 💕</b>
+</p>
+
+</div>
+
+<script>
+for(let i=0;i<40;i++){
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="💖";
+h.style.left=Math.random()*100+"vw";
+h.style.animationDuration=(Math.random()*3+2)+"s";
+document.body.appendChild(h);
+}
+</script>
+
+</body>
+</html>
